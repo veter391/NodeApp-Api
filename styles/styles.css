@@ -1,0 +1,159 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+h1,
+p {
+    width: fit-content;
+    color: white;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 30px 50px;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    margin-left: auto;
+    width: fit-content;
+}
+
+a {
+    color: white;
+}
+
+a:not(:last-child) {
+    margin-right: 25px;
+}
+
+ol {
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+article {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, .5);
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: skyblue;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+article p {
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+article div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, .5);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+textarea {
+    /* width: 400px; */
+    height: 200px;
+    resize: none;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 25px;
+    width: fit-content;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover, .btn-edit:hover {
+    color: #333;
+    background-color: white;
+}
+.btns-box {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.btn-delete, .btn-edit {
+    display: block;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, .5);
+    border: none;
+}
+.btn-edit {
+    margin-right: 10px !important;
+    transition: .3s ease;
+}
+
+.home__descr {
+    margin-bottom: 15px;
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.img {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 10px;
+}

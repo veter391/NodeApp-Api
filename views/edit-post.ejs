@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <header>
+        <%- include('./partials/nav.ejs')  %>
+    </header>
+    <h1>Add post</h1>
+    <!-- for calling PUT method in url when you call it with POST it needs method-override package!! -->
+    <form id="form-post" method="post" action="/edit/<%= post.id %>?_method=PUT">
+        <input name="title" type="text" placeholder="Title..." value="<%= post.title %>">
+        <input name="author" type="text" placeholder="Author..."  value="<%= post.author %>">
+        <textarea name="text" placeholder="message..."><%= post.text %></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
