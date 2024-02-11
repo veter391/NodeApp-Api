@@ -7,7 +7,7 @@ follow next commands to run front and back simultaneously on your local machine
 
 ```bash
 npm i
-npm start
+npm run dev
 ```
 then create *.env* file and add to it:
 ```php
